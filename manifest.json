@@ -7,8 +7,8 @@
   "homepage_url": "https://github.com/duckinator/follow-on-mastodon",
 
   "icons": {
-    "48": "icons/icon-48.png",
-    "96": "icons/icon-96.png"
+    "48": "icons/mastodon-follow-48.png",
+    "96": "icons/mastodon-follow-96.png"
   },
 
   "permissions": [
@@ -17,7 +17,7 @@
   ],
 
   "browser_action": {
-    "default_icon": "icons/icon-32.png",
+    "default_icon": "icons/mastodon-follow-32.png",
     "default_title": "Follow on Mastodon",
     "default_popup": "popup/follow.html"
   },
