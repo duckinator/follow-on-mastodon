@@ -14,9 +14,12 @@ let followUrl = (domain, username) =>
 
 browser.tabs.query({currentWindow: true, active: true}).then(tabs => {
   let tab = tabs[0];
-  let url = followUrl("awoo.space", usernameFromUrl(tab.url));
 
-  // TODO: Can this be made to just not open a popup, so the window.close()
-  //       can be removed?
-  browser.tabs.update(tab.id, {"url": url}).then(tab => window.close());
+  browser.storage.local.get('instance').then(instance => {
+    let url = followUrl(instance, usernameFromUrl(tab.url));
+
+    // TODO: Can this be made to just not open a popup, so the window.close()
+    //       can be removed?
+    browser.tabs.update(tab.id, {"url": url}).then(tab => window.close());
+  });
 });
