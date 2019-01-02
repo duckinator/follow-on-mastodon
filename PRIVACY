@@ -1,0 +1,75 @@
+Follow-on-Mastodon Extension Privacy Policy
+
+
+Last modified: November 08, 2018
+
+
+SUMMARY:
+  - The extension only transmits to the server you specify.
+  - The extension only transmits when the Follow on Mastodon button is clicked.
+  - The extension transmits as little information as possible.
+  - The extension stores no information except your preferrences.
+  - See sections 4 and 5 for details on an INFORMATION LEAK RISK.
+
+
+1. DEDICATION TO PRIVACY
+
+If you have any questions or concerns relating to the privacy of this
+extension, please email the author at <me@duckie.co> or open an issue
+on GitHub <https://github.com/duckinator/follow-on-mastodon/issues>.
+
+ANY storage or transmission of information not acknowledged by this policy
+is either a bug or should be added to this policy.
+
+If you notice this occuring, please contact the author as mentioned above.
+
+
+2. CONTEXT AND DEFINITIONS
+
+MASTODON
+  - A social network with servers on many different domains.
+
+PREFERRED INSTANCE
+  - The domain you want to follow other Mastodon users from.
+  - Configured in the extension preferences.
+
+FOLLOW BUTTON
+  - The primary button added by the Follow-on-Mastodon extension.
+
+CURRENT URL
+  - The URL for the page being viewed when the FOLLOW BUTTON is clicked.
+
+
+3. INFORMATION COLLECTION AND STORAGE
+
+ABSOLUTELY NO DATA is collected by the extension.
+
+The only information stored is your PREFERRED INSTANCE.
+
+
+4. INFORMATION TRANSMISSION
+
+Limitations on information transmission:
+
+- Information is ONLY transmitted to your PREFERRED INSTANCE.
+- Information is ONLY transmitted when you click the FOLLOW BUTTON.
+- Information is limited to a portion of the CURRENT URL.
+- Information is never transmitted to the author.
+
+All requests made by the extension include portions of the CURRENT URL
+at the time the FOLLOW BUTTON was clicked.
+
+For example, if you are viewing <https://example.org/@foo/bar> and click
+the FOLLOW BUTTON, the extension will make a request including "foo" and
+"example.org".
+
+5. INFORMATION LEAK RISK
+
+The information sent is intended to be the username for the account
+you intend to follow.
+
+However, the extension can never be completely sure the URL you are
+viewing is on a Mastodon server.
+
+Thus, if used on a non-Mastodon website, your PREFERRED INSTANCE will
+still receive a portion of the CURRENT URL.
